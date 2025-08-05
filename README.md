@@ -17,7 +17,7 @@ Then run `sudo nixos-rebuilt test`, then create a `flake.nix` file in your NixOS
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05"; # This should match the version of NixOS you want to use
 
     nixos-xivlauncher-rb = {
-      url = "github:drakon64/nixos-xivlauncher-rb";
+      url = "github:The1Penguin/nixos-xivlauncher-rb";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -91,3 +91,4 @@ Now run `sudo nix flake update` in your NixOS configuration directory and rebuil
 * [nur-packages-template](https://github.com/nix-community/nur-packages-template) for providing the original template for a Nix Flake
 * [sersorrel](https://github.com/sersorrel) and [witchof0x20](https://github.com/witchof0x20) for maintaining the [XIVLauncher package in Nixpkgs](https://github.com/NixOS/nixpkgs/tree/master/pkgs/by-name/xi/xivlauncher) which this heavily borrows from
 * [niklaskorz](https://github.com/niklaskorz) for showing me how to properly package something with Nix
+* [drakon64](https://github.com/drakon64) for the original flake
